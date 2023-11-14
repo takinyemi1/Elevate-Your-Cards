@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>E.Y.C. Description</title>
+    </head>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        html {
+            background-color: #acebe4;
+            font-family: 'Courier';
+        }
+        .text {
+            display: inline-block;
+            vertical-align: top;
+            color: black;
+            font-size: 200%;
+        }
+        .logo {
+            width: 100px;
+            height: 100px;
+        }
+        .navbar ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            background-color: #e2c7de;
+            overflow: hidden;
+            /*position: sticky;
+            top: 0;*/
+        }
+        .navbar li {
+            display: inline;
+            float: right;
+            border-left: 3px solid #acebe4;
+        }
+        .navbar li a {
+            display: block;
+            color: black;
+            font-family: 'Courier';
+            padding: 14px 16px;
+            text-decoration: none;
+            text-align: center;
+            background-color: #e2c7de;
+        }
+        .navbar li a:hover {
+            background-color: #ca90c1;
+        }
+        .navbar .active {
+            background-color: #879ecf;
+        }
+        .navbar li:last-child {
+            border-left: none;
+            border-right: none;
+        }
+        .header {
+            text-align: center;
+            background-color: #e2f5f3;
+            padding: 1px;
+        }
+        /* Resizing the window */
+        /* Create two unequal columns that float next to each other */
+        /* left column */
+        .leftcolumn {
+            float: left;
+            width: 100%;
+        }
+        /* right column */
+        .rightcolumn {
+            float: left;
+            width: 100%;
+            background-color: #acebe4;
+            /*padding-left: 20px;*/
+        }
+        /* fake image */
+        .fakeimg {
+            background-color: #bacaec;
+            width: 12;
+            padding: 20px;
+        }
+        /* card effect for the articles */
+        .card {
+            background-color: #acebe4;
+            padding: 20px;
+            margin-top: 20px;
+        }
+        /* clear the floats after the columns */
+        .row::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        /* footer */
+        .footer {
+            padding: 1px;
+            text-align: center;
+            background-color: #e2f5f3;
+            margin-top: 20px;
+        }
+        /* responsive layout for when the screen is less than 800px wide. make the two
+        columns stack on top of each other instead of next to each other */
+        @media screen and (max-width: 1200px) {
+            .leftcolumn, .rightcolumn {
+                width: 100%;
+                padding: 0;
+            }
+        }
+        /* responsive layout for when the screen is less than 400px wide. make the navigation links
+        stack on top of eahc other instead of next to each other */
+        @media screen and (max-width: 400px) {
+            .logo {
+                float: none;
+                width: 100%;
+            }
+        }
+        input[type = submit] {
+            border: 2px solid black;
+            padding: 16px;
+            cursor: pointer;
+            font-family: 'Courier'
+        }
+        input[type = submit]:hover {
+            background-color: #ca90c1;
+        }
+        #cardimg {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+        }
+
+    </style>
+
+    <body>
+        <div class = "header">
+            <a href = "intro_EYC.html"><img class = "logo" src = "logo_EYC.png"></a>
+            <p class = "text">Elevate Your Cards</p>
+        </div>
+
+        <br>
+
+        <div class = "navbar">
+            <nav>
+                <ul>
+                    <li><a href = "conclusion_EYC.html">Concluding E.Y.C.</a></li>
+                    <li><a href = "request_form_EYC.html">Requesting E.Y.C.</a></li>
+                    <li><a href = "instruction_EYC.html">How to Use E.Y.C.</a></li>
+                    <li><a href = "explanation_EYC.html">Explaining E.Y.C.</a></li>
+                    <li><a href = "description_EYC.html" class = "active">Describing E.Y.C.</a></li>
+                    <li><a href = "intro_EYC.html">Introducing E.Y.C.</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class = "row">
+            <div class = "leftcolumn">
+                <div class = "card">
+                    <h2 style = "text-align: center; font-size: 180%;">Describe Elevate Your Cards</h2>
+                    <br>
+                        <div class = "fakeimg">
+                            <b><p>After this <span style = "color: rgb(82, 95, 124)">description</span>, young adults aged 18-30, will be able to identify "Elevate Your Cards."</p></b>
+                        </div>
+                    </div>
+
+                    <!-- <div class = "card">
+                        <h2 style = "text-align: center; font-size: 180%;">Features & Senses of Elevate Your Cards</h2>
+                        <div class = "fakeimg">
+                            <p>Each card will be handmade and feel smooth to the touch.</p>
+                            <p>The logo, E.Y.C. on the back of the card, towards the bottom, will have embroidery lettering so the recipient can feel the texture.</p>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+
+        <div class = "row">
+            <div class = "rightcolumn">
+                <div class = "card">
+                    <h2 style = "text-align: center; font-size: 180%;">The Features & Design of Elevate Your Cards</h2>
+                    <br>
+                        <div class = "fakeimg">
+                            <p>The front of a card made by E.Y.C. will have large, noticeable lettering with a picture related to it either aligned to the left, 
+                                aligned to the right, aligned to the top or the bottom, or drawn in between the words.
+                            </p>
+
+                            <p>Written in the large, noticeable lettering will be a sort of slogan related to the recipient or a quote the recipient says often.</p>
+
+                            <img src = "quote.png" id = "cardimg">
+
+                            <hr>
+
+                            <p>The actual design of the front of the card will either relate to the recipient's interests if specified,</p>
+
+                            <br>
+
+                            <img src = "interests.png" id = "cardimg">
+
+                            <br>
+
+                            <b><p>OR</p></b>
+
+                            <br>
+
+                            <p>If the recipient's interests are not specified, the design of the card will be related to the month the card will be gifted on,
+                                or the season the card will be gifted in.</p>
+
+                            <img src = "calendargif.gif" id = "cardimg">
+                        
+                            <hr>
+
+                            <p>As for the inside design of the card, the same rules for the front design apply.</p>
+                            
+                            <br>
+
+                            <img src = "personalmessage.png" id = "cardimg">
+
+                            <p>For the message inside, the person gifting the card will have an option to write a personalized message for the recipient in the request form, that will then 
+                                be written inside of the card.</p>
+
+                            <b><p>OR</p></b>
+
+                            <p>If the person gifting the card opts out of writing a personalized message, a meaningful message will be generated from the interests of the recipient that 
+                                were listed.</p>
+
+                            <b><p>OR</p></b>
+
+                            <p>If the person gifting the card was very scarce with the information that they submitted in the request form, a general message will generated based off of the month 
+                                the card will be gifted on, or the season the card will be gifted in.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class = "card">
+                        <h2 style = "text-align: center; font-size: 180%;">Elevate Your Cards Snapshot</h2>
+
+                        <br>
+
+                        <b><p style = "text-align: center; font-size: 120%;">Here is a prototype of a card made by "Elevate Your Cards."</p></b>
+                        
+                        <div class = "fakeimg">
+                            <img src = "october_front_cover.jpg" id = "cardimg">
+                        </div>
+
+                        <b><p>As you can see, this is a general birthday card that follows the outline of a card made by E.Y.C. that has been
+                            given vague information on who the recipient will be or what their interests are.</p></b>
+
+                    </div>
+
+                    <div class = "card">
+                        <div class = "fakeimg">
+                            <img src = "october_message.jpg" id = "cardimg">
+                        </div>
+
+                        <b><p>The message inside is written based off of the month of October, and nothing more.</p></b>
+                    </div>
+
+                    <div class = "card">
+                        <div class = "fakeimg">
+                            <b><p>Now, with this description, young adults aged 18-30, will be able to <span style = "color:rgb(82, 95, 124)">identify</span> "Elevate Your Cards."</p></b>
+                        </div>
+                    </div>
+
+
+                    <div class = "card">
+                        <div class = "fakeimg">
+                            <p>To learn more about the idea behind "Elevate Your Cards", either click this button here, or scroll to the top of the page 
+                                and click the "Explaining E.Y.C." tab.</p>
+
+                            <br>
+
+                            <!-- linking description_EYC.html to this button -->
+                            <a href = "explanation_EYC.html">
+                                <div style = "text-align: center;">
+                                    <input type = "submit" value = "Go to Explaining E.Y.C.">
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class = "footer">
+            <a href = "intro_EYC.html"><img class = "logo" src = "logo_EYC.png"></a>
+            <p class = "text">Elevate Your Cards</p>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>E.Y.C. Introduction</title>
+    </head>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        html {
+            background-color: #acebe4;
+            font-family: 'Courier';
+        }
+        .text {
+            display: inline-block;
+            vertical-align: top;
+            color: black;
+            font-size: 200%;
+        }
+        .logo {
+            width: 100px;
+            height: 100px;
+        }
+        .navbar ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            background-color: #e2c7de;
+            overflow: hidden;
+            /*position: sticky;
+            top: 0;*/
+        }
+        .navbar li {
+            display: inline;
+            float: right;
+            border-left: 3px solid #acebe4;
+        }
+        .navbar li a {
+            display: block;
+            color: black;
+            font-family: 'Courier';
+            padding: 14px 16px;
+            text-decoration: none;
+            text-align: center;
+            background-color: #e2c7de;
+        }
+        .navbar li a:hover {
+            background-color: #ca90c1;
+        }
+        .navbar .active {
+            background-color: #879ecf;
+        }
+        .navbar li:last-child {
+            border-left: none;
+            border-right: none;
+        }
+        .header {
+            text-align: center;
+            background-color: #e2f5f3;
+            padding: 1px;
+        }
+        /* Resizing the window */
+        /* Create two unequal columns that float next to each other */
+        /* left column */
+        .leftcolumn {
+            float: left;
+            width: 100%;
+        }
+        /* right column */
+        .rightcolumn {
+            float: left;
+            width: 100%;
+            background-color: #acebe4;
+            /*padding-left: 20px;*/
+        }
+        /* fake image */
+        .fakeimg {
+            background-color: #bacaec;
+            width: 12;
+            padding: 20px;
+        }
+        /* card effect for the articles */
+        .card {
+            background-color: #acebe4;
+            padding: 20px;
+            margin-top: 20px;
+        }
+        /* clear the floats after the columns */
+        .row::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        /* footer */
+        .footer {
+            padding: 1px;
+            text-align: center;
+            background-color: #e2f5f3;
+            margin-top: 20px;
+        }
+        /* responsive layout for when the screen is less than 800px wide. make the two
+        columns stack on top of each other instead of next to each other */
+        @media screen and (max-width: 1200px) {
+            .leftcolumn, .rightcolumn {
+                width: 100%;
+                padding: 0;
+            }
+        }
+        /* responsive layout for when the screen is less than 400px wide. make the navigation links
+        stack on top of eahc other instead of next to each other */
+        @media screen and (max-width: 400px) {
+            .logo {
+                float: none;
+                width: 100%;
+            }
+        }
+        input[type = submit] {
+            border: 2px solid black;
+            padding: 16px;
+            cursor: pointer;
+            font-family: 'Courier'
+        }
+        input[type = submit]:hover {
+            background-color: #ca90c1;
+        }
+        #cardimg {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+        }
+
+    </style>
+
+    <body>
+        <div class = "header">
+            <a href = "intro_EYC.html"><img class = "logo" src = "logo_EYC.png"></a>
+            <p class = "text">Elevate Your Cards</p>
+        </div>
+
+        <br>
+
+        <div class = "navbar">
+            <nav>
+                <ul>
+                    <li><a href = "conclusion_EYC.html">Concluding E.Y.C.</a></li>
+                    <li><a href = "request_form_EYC.html">Requesting E.Y.C.</a></li>
+                    <li><a href = "instruction_EYC.html">How to Use E.Y.C.</a></li>
+                    <li><a href = "explanation_EYC.html">Explaining E.Y.C.</a></li>
+                    <li><a href = "description_EYC.html">Describing E.Y.C.</a></li>
+                    <li><a href = "intro_EYC.html" class = "active">Introducing E.Y.C.</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class = "row">
+            <div class = "leftcolumn">
+                <div class = "card">
+                    <h2 style = "text-align: center; font-size: 180%;">About Elevate Your Cards</h2>
+                    <br>
+                        <div class = "fakeimg">
+                            <p>We, young adults aged 18-30, tend to just choose one of the first few cards we 
+                                see on a card stand, not putting thought into the message or design, because of 
+                                    how easily acessible they are.
+                            </p>
+
+                            <br>
+
+                            <p>"Elevate Your Cards" is a cardmaking business that services young adults aged 18-30 by 
+                                elevating the cards they gift for special events, to make the recipient(s) feel more
+                                    prioritized and appreciated.
+                            </p>
+
+                            <br>
+                        </div>
+                    </div>
+
+                    <div class = "card">
+                        <div class = "fakeimg">
+                            <p>Each section on the navigation bar will lead you to learning more in depth about what "Elevate Your Cards"
+                                card designs will look like, what the purpose of it is, and instruct you on how to use the service.
+                            </p>
+
+                            <br>
+
+                            <img src = "card.png" id = "cardimg">
+                        </div>
+                    </div>
+
+                    <div class = "card">
+                        <div class = "fakeimg">
+                            <p>To start this journey, either click this button here, or scroll to the top of the page 
+                                and click the "Describing E.Y.C." tab.</p>
+
+                            <br>
+
+                            <!-- linking description_EYC.html to this button -->
+                            <a href = "description_EYC.html">
+                                <div style = "text-align: center;">
+                                    <input type = "submit" value = "Go to Descibing E.Y.C.">
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class = "footer">
+            <a href = "intro_EYC.html"><img class = "logo" src = "logo_EYC.png"></a>
+            <p class = "text">Elevate Your Cards</p>
+        </div>
+    </body>
+</html>

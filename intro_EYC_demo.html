@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>E.Y.C. Introduction</title>
+    </head>
+
+    <!-- CSS styling -->
+    <!-- style for the navbar using CSS flex -->
+    <style>
+        nav .logo {
+            float: left;
+            width: 80px;
+            height: 64px;
+        }
+        nav {
+            width: 100%;
+            margin: 0;
+            height: 70px;
+        }
+        .navbar {
+            background-color: #e2f5eb;
+            height: 70px;
+            width: 100%;
+            margin: 0;
+        }
+        .navbar img {
+            float: left;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            background-color: #e2f5eb;
+            overflow: hidden;
+            position: sticky;
+            top: 0;
+        }
+        nav li {
+            float: right;
+            display: inline;
+            border-left: 3px solid #87cfa9;
+        }
+        nav li a {
+            display: block;
+            color: black;
+            font-family: 'Courier New';
+            padding: 14px 16px;
+            text-decoration: none;
+            text-align: center;
+            background-color: #e2f5eb;
+        }
+        nav li a:hover {
+            background-color: #87cfa9;
+            color: black;
+        }
+        nav .active {
+            background-color: #879ecf;
+        }
+        nav li:last-child {
+            border-left: none;
+            border-right: none;
+        }
+    </style>
+
+    <body>
+        <div class = "navbar">
+            <!-- create your navigation bar -->
+            <nav>
+                <a href = "intro_EYC.html"><img class = "logo" src = "logo_EYC.png"></a>
+                    <ul>
+                        <li><a href = "intro_EYC.html" class = "active">Introducing E.Y.C.</a></li>
+                        <li><a href = "description_EYC.html">Describing E.Y.C.</a></li>
+                        <li><a href = "explanation_EYC.html">Explaning E.Y.C.</a></li>
+                        <li><a href = "instruction_EYC.html">Instructing E.Y.C.</a></li>
+                        <li><a href = "conclusion_contact_EYC.html">Concluding E.Y.C.</a></li>
+                    </ul>
+            </nav>
+        </div>
+    </body>
+</html>

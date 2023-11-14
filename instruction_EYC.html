@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>E.Y.C. Description</title>
+    </head>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        html {
+            background-color: #acebe4;
+            font-family: 'Courier';
+        }
+        .text {
+            display: inline-block;
+            vertical-align: top;
+            color: black;
+            font-size: 200%;
+        }
+        .logo {
+            width: 100px;
+            height: 100px;
+        }
+        .navbar ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            background-color: #e2c7de;
+            overflow: hidden;
+            /*position: sticky;
+            top: 0;*/
+        }
+        .navbar li {
+            display: inline;
+            float: right;
+            border-left: 3px solid #acebe4;
+        }
+        .navbar li a {
+            display: block;
+            color: black;
+            font-family: 'Courier';
+            padding: 14px 16px;
+            text-decoration: none;
+            text-align: center;
+            background-color: #e2c7de;
+        }
+        .navbar li a:hover {
+            background-color: #ca90c1;
+        }
+        .navbar .active {
+            background-color: #879ecf;
+        }
+        .navbar li:last-child {
+            border-left: none;
+            border-right: none;
+        }
+        .header {
+            text-align: center;
+            background-color: #e2f5f3;
+            padding: 1px;
+        }
+        /* Resizing the window */
+        /* Create two unequal columns that float next to each other */
+        /* left column */
+        .leftcolumn {
+            float: left;
+            width: 100%;
+        }
+        /* right column */
+        .rightcolumn {
+            float: left;
+            width: 100%;
+            background-color: #acebe4;
+            /*padding-left: 20px;*/
+        }
+        /* fake image */
+        .fakeimg {
+            background-color: #bacaec;
+            width: 12;
+            padding: 20px;
+        }
+        /* card effect for the articles */
+        .card {
+            background-color: #acebe4;
+            padding: 20px;
+            margin-top: 20px;
+        }
+        /* clear the floats after the columns */
+        .row::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        /* footer */
+        .footer {
+            padding: 1px;
+            text-align: center;
+            background-color: #e2f5f3;
+            margin-top: 20px;
+        }
+        /* responsive layout for when the screen is less than 800px wide. make the two
+        columns stack on top of each other instead of next to each other */
+        @media screen and (max-width: 1200px) {
+            .leftcolumn, .rightcolumn {
+                width: 100%;
+                padding: 0;
+            }
+        }
+        /* responsive layout for when the screen is less than 400px wide. make the navigation links
+        stack on top of eahc other instead of next to each other */
+        @media screen and (max-width: 400px) {
+            .logo {
+                float: none;
+                width: 100%;
+            }
+        }
+        input[type = submit] {
+            border: 2px solid black;
+            padding: 16px;
+            cursor: pointer;
+            font-family: 'Courier'
+        }
+        input[type = submit]:hover {
+            background-color: #ca90c1;
+        }
+        #cardimg {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 100%;
+        }
+
+    </style>
+
+    <body>
+        <div class = "header">
+            <a href = "intro_EYC.html"><img class = "logo" src = "logo_EYC.png"></a>
+            <p class = "text">Elevate Your Cards</p>
+        </div>
+
+        <br>
+
+        <div class = "navbar">
+            <nav>
+                <ul>
+                    <li><a href = "conclusion_EYC.html">Concluding E.Y.C.</a></li>
+                    <li><a href = "request_form_EYC.html">Requesting E.Y.C.</a></li>
+                    <li><a href = "instruction_EYC.html" class = "active">How to Use E.Y.C.</a></li>
+                    <li><a href = "explanation_EYC.html">Explaining E.Y.C.</a></li>
+                    <li><a href = "description_EYC.html">Describing E.Y.C.</a></li>
+                    <li><a href = "intro_EYC.html">Introducing E.Y.C.</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class = "row">
+            <div class = "leftcolumn">
+                <div class = "card">
+                    <h2 style = "text-align: center; font-size: 200%;">How to Use Elevate Your Cards</h2>
+                        <div class = "fakeimg">
+                            <b><p>After this <span style = "color: rgb(84, 69, 165)">instruction</span>, young adults aged 18-30, will know how to request for a card to be made 
+                                by "Elevate Your Cards".</p></b>
+                        </div>
+                    </div>
+
+                    <div class = "card">
+                        <h2 style = "text-align: center; font-size: 180%;">Step One</h2>
+                        <div class = "fakeimg">
+                            <p>Click this button or the tab that says "E.Y.C. Request Form" in order to begin the process for requesting a card to be made by
+                                "Elevate Your Cards".
+                            </p>
+
+                            <br>
+
+                            <a href = "request_form_EYC.html">
+                                <div style = "text-align: center;">
+                                    <input type = "submit" value = "Go to E.Y.C. Request Form">
+                                </div>
+                            </a>
+                            <!-- <img src = "cardimg.jpg" id = "cardimg"> -->
+                        </div>
+                    </div>
+
+                    <div class = "card">
+                        <b><p style = "color: red; font-size: 150%; text-align: center;">DISCLAIMER: The following names are not real; they are just to be used as examples.</b>
+                    </div>
+
+                    <div class = "card">
+                        <h2 style = "text-align: center; font-size: 180%;">Step Two</h2>
+                        <div class = "fakeimg">
+                            <p>Enter your first name as demonstrated.</p>
+
+                            <br>
+
+                            <img src = "fname.png" id = "cardimg">
+                        </div>
+                    </div>
+
+                    <div class = "card">
+                        <h2 style = "text-align: center; font-size: 180%;">Step Three</h2>
+                        <div class = "fakeimg">
+                            <p>Enter your last name as demonstrated.</p>
+
+                            <br>
+
+                            <img src = "lname.png" id = "cardimg">
+                        </div>
+                    </div>
+
+                    <div class = "card">
+                        <h2 style = "text-align: center; font-size: 180%;">Step Four</h2>
+                        <div class = "fakeimg">
+                            <p>Enter your email as demonstrated.</p>
+
+                            <br>
+
+                            <img src = "email.png" id = "cardimg">
+                        </div>
+                    </div>
+
+                    <div class = "card">
+                        <h2 style = "text-align: center; font-size: 180%;">Step Five</h2>
+                        <div class = "fakeimg">
+                            <p>Enter your phone number as demonstrated.</p>
+
+                            <br>
+
+                            <img src = "phone number.png" id = "cardimg">
+                        </div>
+                    </div>
+
+                    <div class = "card">
+                        <h2 style = "text-align: center; font-size: 180%;">Step Six</h2>
+                        <b><p style = "color: red">DISCLAIMER: This option is only for if it is not possible for you to pick the card up in person.</p></b>
+                        <div class = "fakeimg">
+                            <p>Enter your address.</p>
+
+                            <br>
+
+                            <img src = "address.png" id = "cardimg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class = "row">
+            <div class = "rightcolumn">
+                <div class = "card">
+                    <h2 style = "text-align: center; font-size: 180%;">Step Seven</h2>
+                        <div class = "fakeimg">
+                            <p>Enter the recipient's first name as demonstrated.</p>
+
+                            <br>
+
+                            <img src = "rfname.png" id = "cardimg">
+                        </div>
+                    </div>
+
+                    <div class = "card">
+                        <h2 style = "text-align: center; font-size: 180%;">Step Eight</h2>
+                        <div class = "fakeimg">
+                            <p>Enter the recipient's last name as demonstrated.</p>
+
+                            <br>
+
+                            <img src = "rlname.png" id = "cardimg">
+                        </div>
+                    </div>
+
+                    <div class = "card">
+                        <h2 style = "text-align: center; font-size: 180%;">Step Nine</h2>
+                        <div class = "fakeimg">
+                            <p>Enter the recipient's phone number as demonstrated (This is optional).</p>
+
+                            <br>
+
+                            <img src = "rphone number.png" id = "cardimg">
+                        </div>
+                    </div>
+
+                    <div class = "card">
+                        <h2 style = "text-align: center; font-size: 180%;">Step Ten</h2>
+                        <b><p style = "color: red">DISCLAIMER: This option is only for if you would like for the card to be sent 
+                            directly to the recipient.</p></b>
+                        <div class = "fakeimg">
+                            <p>Enter the recipient's address.</p>
+
+                            <br>
+
+                            <img src = "raddress.png" id = "cardimg">
+                        </div>
+                    </div>
+
+                    <div class = "card">
+                        <h2 style = "text-align: center; font-size: 180%;">Step Eleven</h2>
+                        <div class = "fakeimg">
+                            <p>Enter the recipient's top five interests/hobbies (only three out of five are required) as demonstrated.</p>
+
+                            <br>
+
+                            <img src = "rhobby1.png" id = "cardimg">
+
+                            <br>
+
+                            <img src = "rhobby2.png" id = "cardimg">
+
+                            <br>
+
+                            <img src = "rhobby3.png" id = "cardimg">
+
+                            <br>
+
+                            <img src = "rhobby4.png" id = "cardimg">
+
+                            <br>
+
+                            <img src = "rhobby5.png" id = "cardimg">
+                        </div>
+                    </div>
+
+                    <div class = "card">
+                        <h2 style = "text-align: center; font-size: 180%;">Step Twelve</h2>
+                        <div class = "fakeimg">
+                            <p>Enter a personalized message for the recipient or N/A to opt out as demonstrated.</p>
+
+                            <br>
+
+                            <img src = "message.png" id = "cardimg">
+                        </div>
+                    </div>
+
+                    <div class = "card">
+                        <h2 style = "text-align: center; font-size: 180%;">What Next?</h2>
+                        <div class = "fakeimg">
+                            <p>Afterwards, your data will be sent to our database where it will be processed. The page will then be reloaded, where you'll
+                                be able to see the information you submitted, essentially "printed" on the screen. On the last line, you will see that your 
+                                information was successfully added. 
+                            </p>
+
+                            <br>
+
+                            <img src = "firstoutcome.png" id = "cardimg">
+
+                            <br>
+
+                            <img src = "secondoutcome (2).png" id = "cardimg">
+
+                            <br>
+
+                            <hr>
+
+                            <p>To receive the card, a message will be sent to both your phone number and email notifying you of the card being done and where to
+                                pick it up.
+                            </p>
+
+                            <b><p>OR</p></b>
+
+                            <p>If you do not have the ability to pick it up in-person, it can be delivered to your address.</p>
+                        </div>
+                    </div>
+
+                    <div class = "card">
+                        <div class = "fakeimg">
+                            <b><p>Now, young adults aged 18-30 will know how to <span style = "color: rgb(84, 69, 165)">operate</span> the website for 
+                                "Elevate Your Cards" and request a form for a card to be made.
+                            </p></b>
+                        </div>
+                    </div>
+
+                    <div class = "card">
+                        <div class = "fakeimg">
+                            <p>To get the full picture of "Elevate Your Cards" and to find more ways to contact us, either 
+                                click this button here, or scroll to the top and click the "Concluding E.Y.C." tab.</p>
+
+                            <br>
+
+                            <!-- linking description_EYC.html to this button -->
+                            <a href = "conclusion_EYC.html">
+                                <div style = "text-align: center;">
+                                    <input type = "submit" value = "Go to Concluding E.Y.C.">
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class = "footer">
+            <a href = "intro_EYC.html"><img class = "logo" src = "logo_EYC.png"></a>
+            <p class = "text">Elevate Your Cards</p>
+        </div>
+    </body>
+</html>

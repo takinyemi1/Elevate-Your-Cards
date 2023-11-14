@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>E.Y.C. Description</title>
+    </head>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        html {
+            background-color: #acebe4;
+            font-family: 'Courier';
+        }
+        .text {
+            display: inline-block;
+            vertical-align: top;
+            color: black;
+            font-size: 200%;
+        }
+        .logo {
+            width: 100px;
+            height: 100px;
+        }
+        .navbar ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            background-color: #e2c7de;
+            overflow: hidden;
+            /*position: sticky;
+            top: 0;*/
+        }
+        .navbar li {
+            display: inline;
+            float: right;
+            border-left: 3px solid #acebe4;
+        }
+        .navbar li a {
+            display: block;
+            color: black;
+            font-family: 'Courier';
+            padding: 14px 16px;
+            text-decoration: none;
+            text-align: center;
+            background-color: #e2c7de;
+        }
+        .navbar li a:hover {
+            background-color: #ca90c1;
+        }
+        .navbar .active {
+            background-color: #879ecf;
+        }
+        .navbar li:last-child {
+            border-left: none;
+            border-right: none;
+        }
+        .header {
+            text-align: center;
+            background-color: #e2f5f3;
+            padding: 1px;
+        }
+        /* Resizing the window */
+        /* Create two unequal columns that float next to each other */
+        /* left column */
+        .leftcolumn {
+            float: left;
+            width: 100%;
+        }
+        /* right column */
+        .rightcolumn {
+            float: left;
+            width: 100%;
+            background-color: #acebe4;
+            /*padding-left: 20px;*/
+        }
+        /* fake image */
+        .fakeimg {
+            background-color: #bacaec;
+            width: 12;
+            padding: 20px;
+        }
+        /* card effect for the articles */
+        .card {
+            background-color: #acebe4;
+            padding: 20px;
+            margin-top: 20px;
+        }
+        /* clear the floats after the columns */
+        .row::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        /* footer */
+        .footer {
+            padding: 1px;
+            text-align: center;
+            background-color: #e2f5f3;
+            margin-top: 20px;
+        }
+        /* responsive layout for when the screen is less than 800px wide. make the two
+        columns stack on top of each other instead of next to each other */
+        @media screen and (max-width: 1200px) {
+            .leftcolumn, .rightcolumn {
+                width: 100%;
+                padding: 0;
+            }
+        }
+        /* responsive layout for when the screen is less than 400px wide. make the navigation links
+        stack on top of eahc other instead of next to each other */
+        @media screen and (max-width: 400px) {
+            .logo {
+                float: none;
+                width: 100%;
+            }
+        }
+        input[type = submit] {
+            border: 2px solid black;
+            padding: 16px;
+            cursor: pointer;
+            font-family: 'Courier'
+        }
+        input[type = submit]:hover {
+            background-color: #ca90c1;
+        }
+        #cardimg {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+        }
+        input[type = text] {
+            border: 2px solid black;
+            padding: 16px;
+            width: 55%;
+            cursor: pointer;
+            font-family: 'Courier';
+        }
+        input[type = text]:hover {
+            background-color: #ddd;
+        }
+        input[type = number] {
+            border: 2px solid black;
+            padding: 16px;
+            width: 55%;
+            cursor: pointer;
+            font-family: 'Courier';
+        }
+        input[type = number]:hover {
+            background-color: #ddd;
+        }
+        textarea {
+            width: 55%;
+            padding: 16px;
+            border: 2px solid black;
+            border-radius: 4px;
+            box-sizing: border-box;
+            resize: vertical;
+        }
+
+    </style>
+
+    <body>
+        <div class = "header">
+            <a href = "intro_EYC.html"><img class = "logo" src = "logo_EYC.png"></a>
+            <p class = "text">Elevate Your Cards</p>
+        </div>
+
+        <br>
+
+        <div class = "navbar">
+            <nav>
+                <ul>
+                    <li><a href = "conclusion_EYC.html">Concluding E.Y.C.</a></li>
+                    <li><a href = "request_form_EYC.html" class = "active">Requesting E.Y.C.</a></li>
+                    <li><a href = "instruction_EYC.html">How to Use E.Y.C.</a></li>
+                    <li><a href = "explanation_EYC.html">Explaining E.Y.C.</a></li>
+                    <li><a href = "description_EYC.html">Describing E.Y.C.</a></li>
+                    <li><a href = "intro_EYC.html">Introducing E.Y.C.</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class = "EYCForm">
+            <div class = "row">
+                <div class = "leftcolumn">
+                    <div class = "card">
+                        <h2 style = "text-align: center; font-size: 200%;">Enter Your Information.</h2>
+                            <div class = "fakeimg">
+                                    <br><br>
+                                    <form action = "request_form_EYC_values.php" method = "post">
+                                        <label>Enter First Name: </label>
+
+                                        <input type = "text" name = "fname" placeholder = "Enter First Name..." required>
+
+                                        <br><br><br>
+
+                                        <label>Enter Last Name: </label>
+
+                                        <input type = "text" name = "lname" placeholder = "Enter Last Name..." required>
+
+                                        <br><br><br>
+
+                                        <label>Enter Email: </label>
+
+                                        <input type = "text" name = "email" placeholder = "Enter Email..." required>
+
+                                        <br><br><br>
+
+                                        <label>Enter Phone Number: </label>
+
+                                        <input type = "number" name = "pnum" placeholder = "Enter Phone Nuumber..." required>
+
+                                        <br><br><br>
+
+                                        <label>Enter Address: </label>
+
+                                        <input type = "text" name = "address" placeholder = "Enter Address or N/A...">
+
+                                        <br><br><br>
+
+                                        <div style = "text-align: center;">
+                                            <input type = "submit" value = "Submit Information">
+                                        </div>
+                                    </form>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class = "EYCForm2">
+            <div class = "row">
+                <div class = "rightcolumn">
+                    <div class = "card">
+                        <h2 style = "text-align: center; font-size: 200%;">Enter the Recipient's Information.</h2>
+                        <div class = "fakeimg">
+                            <br><br>
+                            <form action = "request_form1_EYC.php" method = "post">
+                                <label>Enter Recipient's First Name: </label>
+
+                                <input type = "text" name = "rfname" placeholder = "Enter Recipient's First Name..." required>
+
+                                <br><br><br>
+
+                                <label>Enter Recipient's Last Name: </label>
+
+                                <input type = "text" name = "rlname" placeholder = "Enter Recipient's Last Name..." required>
+
+                                <br><br><br>
+
+                                <label>Enter Recipient's Phone Number: </label>
+
+                                <input type = "number" name = "rpnum" placeholder = "Enter Recipient's Phone Number...">
+                                
+                                <br><br><br>
+
+                                <label>Enter Recipient's Address: </label>
+
+                                <input type = "text" name = "raddress" placeholder = "Enter Recipient's Address or N/A...">
+
+                                <br><br><br>
+
+                                <label style = "color: red; font-weight: bold; font-size: 120%;">DISCLAIMER: Only three out of five of the text fields are required. Enter N/A for the other two
+                                    fields if you choose to not fill them.
+                                </label>
+
+                                <br><br><br>
+
+                                <label>Enter Recipient's First Interest/Hobby: </label>
+
+                                <input type = "text" name = "rhobby1" placeholder = "Enter First Hobby..." required>
+
+                                <br><br><br>
+
+                                <label>Enter Recipient's Second Interest/Hobby: </label>
+
+                                <input type = "text" name = "rhobby2" placeholder = "Enter Second Hobby..." required>
+
+                                <br><br><br>
+
+                                <label>Enter Recipient's Third Interest/Hobby: </label>
+
+                                <input type = "text" name = "rhobby3" placeholder = "Enter Third Hobby..." required>
+
+                                <br><br><br>
+
+                                <label>Enter Recipient's Fourth Interest/Hobby: </label>
+
+                                <input type = "text" name = "rhobby4" placeholder = "Enter Fourth Hobby or N/A...">
+
+                                <br><br><br>
+
+                                <label>Enter Recipient's Fifth Interest/Hobby: </label>
+
+                                <input type = "text" name = "rhobby5" placeholder = "Enter Fifth Hobby or N/A...">
+
+                                <br><br><br>
+
+                                <label>Enter Personalized Message for the Recipient: </label>
+
+                                <textarea id = "message" name = "message" placeholder = "Enter Personalized Message for Recipient or N/A..." style = "height: 200px;"></textarea>
+
+                                <br><br><br> 
+
+                                <div style = "text-align: center;">
+                                    <input type = "submit" value = "Submit Information">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class = "card">
+            <div class = "fakeimg">
+                <b><p>Once again, young adults aged 18-30, will know how to <span style = "color: rgb(84, 69, 165)">request</span> for a card to be made by "Elevate Your Cards".</p></b>
+            </div>
+        </div>
+
+        <div class = "card">
+            <div class = "fakeimg">
+                <p>To get the full picture of "Elevate Your Cards" and to find more ways to contact us, either 
+                    click this button here, or scroll to the top and click the "Concluding E.Y.C." tab.</p>
+
+                <br>
+
+                <!-- linking description_EYC.html to this button -->
+                <a href = "conclusion_EYC.html">
+                    <div style = "text-align: center;">
+                        <input type = "submit" value = "Go to Concluding E.Y.C.">
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class = "footer">
+            <a href = "intro_EYC.html"><img class = "logo" src = "logo_EYC.png"></a>
+            <p class = "text">Elevate Your Cards</p>
+        </div>
+    </body>
+</html>
